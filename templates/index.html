@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Biotech AI Teacher</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head
+
+<body>
+    <nav class="navbar">
+    <h2>🧬 Biotech AI Teacher</h2>
+
+    <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#topics">Topics</a></li>
+       <li><a href="#roadmap">Roadmap</a></li>
+       <li><a href="#about">About</a></li>
+    </ul>   
+    
+</nav>
+    <div class="container" id="home"></div>
+
+
+
+<h1>🧬 Biotech AI Teacher</h1>
+
+<div class="hero-text">
+    <h2>Learn Biotechnology the Smart Way 🧬</h2>
+
+    <p>
+        Explore DNA, RNA, PCR, CRISPR, Bioinformatics and many more biotechnology topics with explanations, applications and viva questions.
+    </p>
+</div>
+
+<form method="POST">
+    <p>
+        Learn Biotechnology Concepts in Simple Language
+    </p>
+
+    <form method="POST">
+
+        <input
+       <input type="text" name="topic" placeholder="Try: DNA, RNA, PCR, CRISPR, ELISA">
+
+        <button type="submit">
+            Explain
+        </button>
+
+    </form>
+
+    <hr>
+
+    <div class="recent-searches">
+    <h3>🕒 Recent Topics</h3>
+    <p>DNA • RNA • PCR • CRISPR • ELISA</p>
+    </div>
+>🔥 Popular Topics</h2>
+    <p style="color:gray;">
+22+ Biotechnology Topics Available
+</p>
+
+<div class="topics" id="topics">
+
+   <a href="/?topic=dna" class="topic-card">DNA</a>
+
+<a href="/?topic=rna" class="topic-card">RNA</a>
+
+<a href="/?topic=pcr" class="topic-card">PCR</a>
+
+<a href="/?topic=crispr" class="topic-card">CRISPR</a>
+
+<a href="/?topic=elisa" class="topic-card">ELISA</a>
+
+<a href="/?topic=blast" class="topic-card">BLAST</a>
+</div>
+
+    <p>
+        PCR • DNA • RNA • Gene • Protein • Bioinformatics • CRISPR • ELISA
+    </p>
+
+   {% if result %}
+   <h2>📚 Topic Details</h2>
+<hr>
+<div class="result">
+
+    <h3>📚 Explanation</h3>
+    <pre>{{ result.explanation }}</pre>
+    <h3>🔬 Application</h3>
+    <pre>{{ result.application }}</pre>
+    <h3>🎓 Viva Question</h3>
+    <pre>{{ result.viva }}</pre>
+    
+    
+
+</div>
+{% endif %} 
+    
+
+    <hr>
+
+    <h2 id="roadmap">🚀 Bioinformatics Roadmap</h2>
+
+    <ol>
+
+        <li>Learn Python Basics</li>
+
+        <li>Learn Biopython</li>
+
+        <li>Learn NCBI Databases</li>
+
+        <li>Learn BLAST</li>
+
+        <li>Sequence Analysis</li>
+
+        <li>Machine Learning in Biology</li>
+
+    </ol>
+
+    <hr>
+    <hr>
+    <hr>
+
+<h2>📊 Website Statistics</h2>
+
+<p>
+📚 Topics Available: 22
+</p>
+
+<p>
+🧬 Category: Biotechnology & Bioinformatics
+</p>
+
+<h2 id="about">About Project</h2>
+
+<p>
+Biotech AI Teacher is an educational web application developed to help biotechnology students understand complex biological concepts in a simple and interactive way.
+</p>
+
+<p>
+The website provides explanations, applications, and viva questions for important biotechnology topics such as DNA, RNA, PCR, CRISPR, ELISA, Bioinformatics, and more.
+</p>
+
+<p>
+Developed by: Niyati
+<p>Version 1.0 | Biotechnology Educational Project</p>
+
+</p>
+
+   <p class="footer">
+🧬 Biotech AI Teacher <br>
+Developed by Niyati <br>
+Made for Biotechnology Students ❤️
+<p class="footer">
+Project Category: Biotechnology & Bioinformatics
+</p>
+</p> 
+</body>
+
+</html>
